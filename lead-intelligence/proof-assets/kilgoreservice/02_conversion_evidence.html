@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Evidence Ledger — Kilgore Service / Kilgore Industries</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #f0f6fc;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-red: #f85149;
+            --accent-amber: #d29922;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 1040px; margin: 0 auto; }
+        .header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 32px; }
+        h1 { font-size: 26px; margin-bottom: 8px; }
+        
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+        @media(max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
+        .shot-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+        .shot-box img { width: 100%; height: auto; display: block; border-bottom: 1px solid var(--border); }
+        .shot-label { padding: 12px; font-size: 13px; color: var(--text-muted); font-weight: 500; }
+
+        .evidence-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-bottom: 24px; }
+        .card-top { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+        .hypo-id { font-family: monospace; font-size: 12px; background: rgba(88, 166, 255, 0.15); color: var(--accent); padding: 2px 8px; border-radius: 4px; font-weight: 700; }
+        .vector-tag { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+        .severity-tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 700; text-transform: uppercase; }
+        .severity-high { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); }
+        .severity-medium { background: rgba(210, 153, 34, 0.2); color: var(--accent-amber); }
+        .severity-low { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); }
+        
+        .finding-title { font-size: 17px; margin-bottom: 14px; }
+        .evidence-block, .impact-block, .rec-block { font-size: 14px; margin-bottom: 10px; padding: 10px 14px; border-radius: 6px; }
+        .evidence-block { background: rgba(255,255,255,0.03); border-left: 3px solid var(--border); }
+        .impact-block { background: rgba(210, 153, 34, 0.08); border-left: 3px solid var(--accent-amber); }
+        .rec-block { background: rgba(63, 185, 80, 0.08); border-left: 3px solid var(--accent-green); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Visual Evidence & Hypothesis Ledger: Kilgore Service / Kilgore Industries</h1>
+            <p style="color: var(--text-muted); font-size: 14px;">Separating Ground-Truth Observation from Commercial Hypotheses | Audit Target: https://kilgoreservice.com</p>
+        </div>
+
+        <h2 style="font-size: 18px; margin-bottom: 16px;">Automated Viewport & Interaction Captures</h2>
+        <div class="gallery">
+            <div class="shot-box">
+                <img src="screenshots/01_hero_desktop.png" alt="Desktop Hero Viewport" onerror="this.src='https://via.placeholder.com/600x350/161b22/8b949e?text=Desktop+Hero+Capture';">
+                <div class="shot-label">1. Primary Desktop Hero & Header CTA Hierarchy</div>
+            </div>
+            <div class="shot-box">
+                <img src="screenshots/02_service_routing.png" alt="Service Catalog Grid" onerror="this.src='https://via.placeholder.com/600x350/161b22/8b949e?text=Service+Catalog+Grid';">
+                <div class="shot-label">2. Service Catalog & Categorization Grid</div>
+            </div>
+            <div class="shot-box">
+                <img src="screenshots/03_scheduling_intake.png" alt="Scheduling Intake Form" onerror="this.src='https://via.placeholder.com/600x350/161b22/8b949e?text=Scheduling+Intake+Form';">
+                <div class="shot-label">3. Intake Form Layout & Field Depth</div>
+            </div>
+            <div class="shot-box">
+                <img src="screenshots/04_mobile_viewport.png" alt="Mobile Viewport" onerror="this.src='https://via.placeholder.com/600x350/161b22/8b949e?text=Mobile+Viewport+Capture';">
+                <div class="shot-label">4. Mobile Conversion Viewport & Sticky Bar Inspection</div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 18px; margin-bottom: 16px;">Evidence-Backed Hypothesis Ledger (CM Series)</h2>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0101</span>
+                <span class="vector-tag">Acquisition Routing</span>
+                <span class="severity-tag severity-high">HIGH PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Primary conversion paths rely on generalized top-level CTAs without intent-matched landing states.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Header and hero present general 'Schedule Service' or 'Contact' actions.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Commercial buyers, urgent replacement shoppers, and routine repair inquiries enter identical triage paths, creating drop-off for higher-ticket commercial requests.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Deploy intent-matched modular landing funnels with distinct fast-tracks for Commercial Facilities vs Residential Emergency vs System Replacement.
+            </div>
+        </div>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0102</span>
+                <span class="vector-tag">Service Discovery</span>
+                <span class="severity-tag severity-medium">MEDIUM PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Broad multi-trade catalog requires visitors to self-diagnose technical categories prior to conversion.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Website exposes multiple trade/service lines across standard menus without a problem-first guided selector.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Visitors experiencing ambiguous issues face friction navigating menu hierarchies rather than intuitive symptom-first triage.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Implement an interactive 'What do you need help with?' guided symptom-to-service selector on high-intent entry pages.
+            </div>
+        </div>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0103</span>
+                <span class="vector-tag">Qualification & Intake</span>
+                <span class="severity-tag severity-high">HIGH PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Lead intake utilizes static multi-field forms without progressive disclosure or dynamic qualification.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Intake forms present standard text fields with mandatory phone collection before value delivery.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Static forms with high upfront friction depress initial submission rates, particularly on mobile devices.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Transition to a 2-step conditional micro-step intake with instant trade pre-qualification.
+            </div>
+        </div>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0104</span>
+                <span class="vector-tag">Booking & Conversion Velocity</span>
+                <span class="severity-tag severity-high">HIGH PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Inquiry workflow requires post-submission phone callback rather than confirmed appointment scheduling.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Intake collects customer details as a contact request with an implied callback window.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Quote and inquiry decay accelerates while customers await manual dispatch contact; emergency buyers call competitors.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Integrate direct real-time dispatch calendar booking with dynamic emergency queue prioritization.
+            </div>
+        </div>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0105</span>
+                <span class="vector-tag">Geographic Routing</span>
+                <span class="severity-tag severity-medium">MEDIUM PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Multi-market operational footprint lacks automated ZIP-level customer routing at point of entry.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Regional facility hubs are listed in directories, but entry CTAs do not pre-qualify service area eligibility upfront.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Dispatches from out-of-territory inquiries require manual administrative filtering and lead redirection.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Implement instant ZIP code validation and dynamic nearest-hub routing on all primary conversion entry points.
+            </div>
+        </div>
+        
+        <div class="evidence-card">
+            <div class="card-top">
+                <span class="hypo-id">CM-KIL-0106</span>
+                <span class="vector-tag">Confirmation & Lead Recovery</span>
+                <span class="severity-tag severity-medium">MEDIUM PRIORITY</span>
+            </div>
+            <h3 class="finding-title">Post-action reassurance and abandoned intake recovery mechanisms are not publicly observable.</h3>
+            
+            <div class="evidence-block">
+                <strong>Ground Truth Evidence:</strong><br>
+                Intake forms do not display pre-submission response time SLAs or partial session persistence.
+            </div>
+
+            <div class="impact-block">
+                <strong>Commercial Impact Hypothesis:</strong><br>
+                Uncertainty around response time suppresses submission rates; users who abandon mid-form are lost without automated recovery.
+            </div>
+
+            <div class="rec-block">
+                <strong>Recommended Context & Muse Implementation:</strong><br>
+                Add transparent arrival/callback SLA badges and automated 2-way SMS confirmation loops.
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+graph TD
+    A["Top-of-Funnel Traffic\n(Paid Search / Ads / Organic)"] --> B["Generic Homepage Hero\n(Single CTA: 'Schedule Service')"]
+    B --> C{"Visitor Must Self-Diagnose"}
+    C -->|Complex Navigation| D["Browse Multi-Trade Menu\n(HVAC / Plumbing / Electric / Generator)"]
+    C -->|Immediate Click| E["Static Multi-Field Intake Form\n(6+ Fields + Mandatory Phone)"]
+    D --> E
+    E --> F["Unstructured Contact Submission\n(Single Shared Email Queue)"]
+    F --> G["Manual Office Triage & Callback Window\n(Potential 2-6hr Latency)"]
+    G --> H{"Lead Retention Risk\n(High Drop-Off / Competitor Calls)"}
+    
+    style B fill:#331a1a,stroke:#f85149,stroke-width:2px;
+    style E fill:#331a1a,stroke:#f85149,stroke-width:2px;
+    style G fill:#331a1a,stroke:#f85149,stroke-width:2px;
