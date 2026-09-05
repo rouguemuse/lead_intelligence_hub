@@ -1,0 +1,9 @@
+# Ignore local Python files during Vercel static build
+.venv
+__pycache__
+*.py
+pyproject.toml
+requirements.txt
+uv.lock
+run_scout.bat
+lead-intelligence/
