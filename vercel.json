@@ -1,9 +1,0 @@
-{
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/api/leads",
-      "destination": "/leads.json"
-    }
-  ]
-}
