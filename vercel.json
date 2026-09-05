@@ -1,17 +1,9 @@
 {
-  "version": 2,
+  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    },
-    {
-      "source": "/proof-assets/(.*)",
-      "destination": "/lead-intelligence/proof-assets/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "source": "/api/leads",
+      "destination": "/leads.json"
     }
   ]
 }

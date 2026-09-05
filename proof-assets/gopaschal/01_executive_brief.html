@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion & Intake Intelligence Brief — Paschal Air, Plumbing & Electric</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --surface-card: #21262d;
+            --border: #30363d;
+            --text: #f0f6fc;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-amber: #d29922;
+            --accent-red: #f85149;
+            --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; padding: 40px 20px; }
+        .container { max-width: 1040px; margin: 0 auto; }
+        .header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: 12px; }
+        .badge-elite { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); border: 1px solid rgba(248, 81, 73, 0.4); }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: var(--text-muted); font-size: 15px; }
+        
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+        @media(max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+        .card h2 { font-size: 18px; margin-bottom: 16px; color: var(--text); }
+        
+        .metric-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .metric-row:last-child { border-bottom: none; }
+        .metric-label { color: var(--text-muted); font-size: 14px; }
+        .metric-val { font-weight: 600; font-size: 14px; }
+
+        .vector-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+        .vector-table th, .vector-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        .vector-table th { background: var(--surface-card); color: var(--text-muted); font-weight: 600; }
+        .score-pill { padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 12px; }
+        .score-good { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); }
+        .score-warn { background: rgba(210, 153, 34, 0.2); color: var(--accent-amber); }
+        .score-alert { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); }
+
+        /* Scenario Calculator */
+        .calculator { background: #121d2f; border: 1px solid rgba(88, 166, 255, 0.3); border-radius: 8px; padding: 24px; margin-bottom: 32px; }
+        .calc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .calc-header h2 { font-size: 18px; color: var(--accent); }
+        .calc-disclaimer { font-size: 12px; color: var(--text-muted); }
+        .slider-group { margin-bottom: 16px; }
+        .slider-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px; }
+        input[type=range] { width: 100%; accent-color: var(--accent); }
+        .calc-results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .calc-card { background: rgba(0,0,0,0.3); padding: 16px; border-radius: 6px; text-align: center; }
+        .calc-num { font-size: 22px; font-weight: 700; color: var(--accent-green); margin-top: 4px; }
+
+        .btn-link { display: inline-block; padding: 8px 16px; background: var(--accent); color: #0d1117; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 13px; margin-top: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge badge-elite">ELITE TARGET — SCORE 90/100</span>
+            <h1>Diagnostic Intelligence Brief: Paschal Air, Plumbing & Electric</h1>
+            <p class="subtitle">Prepared by Context & Muse Digital Systems Studio | Target Domain: https://gopaschal.com</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h2>Commercial Profile & Financial Capacity</h2>
+                <div class="metric-row">
+                    <span class="metric-label">Operating Footprint</span>
+                    <span class="metric-val">10+ Regional Hubs (Dallas-Fort Worth, Little Rock, Tulsa, NWA, Missouri, Oklahoma)</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Estimated Engagement Class</span>
+                    <span class="metric-val">CLASS A ($10,000–$20,000+)</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Scale Indicators</span>
+                    <span class="metric-val" style="max-width: 60%; text-align: right;">Hundreds of technicians, 10+ operational regional facilities, massive multi-state M&A rollups (...</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Key Executive</span>
+                    <span class="metric-val">Charley Boyce (President & CEO)</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Primary Friction Summary</h2>
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 14px;">
+                    Rapid multi-state acquisition pace has outpaced web intake infrastructure. High-intent commercial and residential prospects across 10+ distinct metro markets land on a centralized site where multi-trade triage (HVAC vs emergency plumbing vs electrical vs replacement estimates) relies on standard form fills and manual phone call-backs, creating lead leakage and dispatch bottlenecks.
+                </p>
+                <div style="background: rgba(88, 166, 255, 0.1); border-left: 3px solid var(--accent); padding: 12px; font-size: 13px;">
+                    <strong>Proposed Context & Muse System:</strong><br>
+                    Multi-market location-aware customer self-selection system with real-time conditional service routing, automated commercial vs residential qualification, dynamic estimate intake, and direct CRM/dispatch integration across all 10+ operating hubs.
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Scenario Modeling Calculator -->
+        <div class="calculator">
+            <div class="calc-header">
+                <h2>📊 Illustrative Scenario Modeling (Customizable)</h2>
+                <span class="calc-disclaimer">*Illustrative model only. Requires verified analytics data.</span>
+            </div>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+                Adjust the parameters below to model the potential commercial impact of eliminating conversion leakage across high-intent service traffic.
+            </p>
+            
+            <div class="slider-group">
+                <div class="slider-label">
+                    <span>Estimated Monthly High-Intent Visitors:</span>
+                    <strong id="visitors-val">12,000</strong>
+                </div>
+                <input type="range" id="visitors" min="2000" max="50000" step="1000" value="12000" oninput="updateCalc()">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-label">
+                    <span>Estimated Baseline Conversion Rate:</span>
+                    <strong id="cvr-val">3.2%</strong>
+                </div>
+                <input type="range" id="cvr" min="1.0" max="8.0" step="0.1" value="3.2" oninput="updateCalc()">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-label">
+                    <span>Modeled Lead / Transaction Value ($):</span>
+                    <strong id="val-val">$450</strong>
+                </div>
+                <input type="range" id="leadval" min="100" max="2500" step="50" value="450" oninput="updateCalc()">
+            </div>
+
+            <div class="calc-results">
+                <div class="calc-card">
+                    <div style="font-size: 12px; color: var(--text-muted);">Current Monthly Leads</div>
+                    <div class="calc-num" id="curr-leads" style="color: var(--text);">384</div>
+                </div>
+                <div class="calc-card">
+                    <div style="font-size: 12px; color: var(--text-muted);">Additional Leads (+0.6% Lift)</div>
+                    <div class="calc-num" id="add-leads">+72</div>
+                </div>
+                <div class="calc-card">
+                    <div style="font-size: 12px; color: var(--text-muted);">Modeled Monthly Pipeline Value</div>
+                    <div class="calc-num" id="val-gain">+$32,400</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6 Funnel Vectors Table -->
+        <div class="card" style="margin-bottom: 32px;">
+            <h2>Defensible Funnel & Journey Vector Ratings</h2>
+            <table class="vector-table">
+                <thead>
+                    <tr>
+                        <th>Funnel Vector</th>
+                        <th>Rating</th>
+                        <th>Observable Ground Truth Summary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Acquisition Routing</strong></td>
+                        <td><span class="score-pill score-warn">6.8 / 10</span></td>
+                        <td>Centralized top-level CTAs without intent-matched landing states for commercial vs residential replacement.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Service Discovery</strong></td>
+                        <td><span class="score-pill score-warn">6.4 / 10</span></td>
+                        <td>Broad multi-trade catalog requires menu self-diagnosis; lacks a problem-first guided selector.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Qualification & Intake</strong></td>
+                        <td><span class="score-pill score-alert">5.9 / 10</span></td>
+                        <td>Single-page static forms with mandatory upfront phone fields before trade pre-qualification.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Booking & Conversion Velocity</strong></td>
+                        <td><span class="score-pill score-warn">6.2 / 10</span></td>
+                        <td>Inquiry capture relies on callback latency rather than real-time confirmed dispatch slot reservation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Geographic Routing</strong></td>
+                        <td><span class="score-pill score-warn">6.5 / 10</span></td>
+                        <td>Regional hubs documented in directory, but lacks upfront ZIP validation on primary conversion entry points.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Confirmation & Lead Recovery</strong></td>
+                        <td><span class="score-pill score-warn">6.0 / 10</span></td>
+                        <td>Standard form confirmation without explicit technician response SLA or automated SMS loop.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 20px;">
+                <a href="02_conversion_evidence.html" class="btn-link">View Full Visual Evidence Ledger & Screenshots →</a>
+                <a href="05_concept.html" class="btn-link" style="background: var(--accent-green); margin-left: 10px;">Launch Interactive Proof of Concept →</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCalc() {
+            const visitors = parseInt(document.getElementById('visitors').value);
+            const cvr = parseFloat(document.getElementById('cvr').value);
+            const val = parseInt(document.getElementById('leadval').value);
+
+            document.getElementById('visitors-val').innerText = visitors.toLocaleString();
+            document.getElementById('cvr-val').innerText = cvr.toFixed(1) + '%';
+            document.getElementById('val-val').innerText = '$' + val.toLocaleString();
+
+            const currentLeads = Math.round(visitors * (cvr / 100));
+            const liftPercent = 0.6; // modeled 0.6% absolute conversion lift
+            const additionalLeads = Math.round(visitors * (liftPercent / 100));
+            const pipelineGain = additionalLeads * val;
+
+            document.getElementById('curr-leads').innerText = currentLeads.toLocaleString();
+            document.getElementById('add-leads').innerText = '+' + additionalLeads.toLocaleString();
+            document.getElementById('val-gain').innerText = '+$' + pipelineGain.toLocaleString();
+        }
+        updateCalc();
+    </script>
+</body>
+</html>
