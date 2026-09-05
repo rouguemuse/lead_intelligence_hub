@@ -1,0 +1,2 @@
+# Lightweight dependencies for Vercel deployment
+beautifulsoup4>=4.12.0
